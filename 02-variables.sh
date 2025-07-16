@@ -1,7 +1,7 @@
 #!/bin/#!/usr/bin/env bash
 
-$PERSON1=ramesh
-$PERSON2=Suresh
+PERSON1=ramesh
+PERSON2=Suresh
 
 
 echo "$PERSON1: Hello $PERSON2,good morning"
