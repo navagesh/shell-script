@@ -7,4 +7,4 @@ read  -s USERNAME  #the value entered above will be automatically attached to US
 echo "please enter your password::"
 read -s PASSWORD
 
-echo "username is: $USERNAME", password is:$PASSWORD"
+echo "username is: $USERNAME, password is:$PASSWORD"
