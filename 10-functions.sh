@@ -14,7 +14,7 @@ VALIDATE() {
 
   else
 
-    echo " installing is SUCCESS "
+    echo " $2... SUCCESS "
 
   fi
 
