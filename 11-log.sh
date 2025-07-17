@@ -1,6 +1,8 @@
 #!/bin/#!/usr/bin/env bash
 
 ID=$(id -u)
+TIMESTAMP=$(date+%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script name: $0"
 
@@ -10,7 +12,7 @@ VALIDATE() {
 
   then
 
-     echo "ERROR:: $2 is failed "
+     echo "ERROR:: $2 ...failed "
 
      exit 1
 
@@ -38,8 +40,8 @@ fi
 
 yum install mysql -y
 
-VALIDATE $? "installing mysql"
+VALIDATE $? "installing mysql" &>> $LOGFILE
 
 yum install git -y
 
-VALIDATE $? "installing GIT"
+VALIDATE $? "installing GIT"   &>> $LOGFILE
