@@ -1,7 +1,7 @@
 #!/bin/#!/usr/bin/env bash
 
 ID=$(id -u)
-TIMESTAMP=$(date+%F-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script name: $0"
