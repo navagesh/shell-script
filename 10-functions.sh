@@ -4,7 +4,7 @@ ID=$(id -u)
 
 VALIDATE() {
 
-  if [ $? -ne 0]
+  if [ $? -ne 0 ]
 
   then
 
@@ -30,7 +30,7 @@ then
 
 else
 
-  echo " you are not root user"
+  echo " you are  root user"
 
 fi
 
