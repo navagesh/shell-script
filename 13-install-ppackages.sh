@@ -29,7 +29,7 @@ else
 
 fi
 echo "All arguments passed: $@"
-then add
+
 for package in $@
 do
   yum list installed $packages &>> $LOGFILE
@@ -48,4 +48,4 @@ Y
 
   fi
 
-done  
+done
