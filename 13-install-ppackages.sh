@@ -33,7 +33,7 @@ echo "All arguments passed: $@"
 for package in $@
 do
   yum list installed $packages &>> $LOGFILE
-Y
+
   if[$? -ne 0]
 
   then
