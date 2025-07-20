@@ -34,7 +34,7 @@ for package in $@
 do
   yum list installed $packages &>> $LOGFILE
 
-  if[$? -ne 0]
+  if[ $? -ne 0 ]
 
   then
 
@@ -44,8 +44,6 @@ do
 
   else
 
-    echo -e "$packagw is already installed ...$Y SKIPPING $N"
+    echo -e "$package is already installed ...$Y SKIPPING $N"
 
   fi
-
-done
