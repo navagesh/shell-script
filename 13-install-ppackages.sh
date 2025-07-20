@@ -29,4 +29,23 @@ else
 
 fi
 echo "All arguments passed: $@"
-  
+then add
+for package in $@
+do
+  yum list installed $packages &>> $LOGFILE
+Y
+  if[$? -ne 0]
+
+  then
+
+    yum install $package -y &>> $LOGFILE
+
+    VALIDATE $? "installation of $package "
+
+  else
+
+    echo -e "$packagw is already installed ...$Y SKIPPING $N"
+
+  fi
+
+done  
