@@ -19,8 +19,8 @@ while getopts ":n:w:h" opt; do
     h) USAGE; exit;;
   esac
 done
-  if [ -z "$NAME" ]; then # now wishes is optional
-    #echo "ERROR: Both -n and -w are mandatory options."
+  if [ -z "$NAME" ]; then 
+
     echo "ERROR: -n is mandatory."
     USAGE
     exit 1
