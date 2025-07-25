@@ -20,10 +20,7 @@ while getopts ":n:w:h" opt; do
   esac
 done
   if [ -z "$NAME" ]; then
-
-    echo "ERROR: -n is mandatory."
-    USAGE
-    exit 1
+     echo "ERROR: -n is mandatory."
+     USAGE
+     exit 1
   fi
-
-echo "Hello $NAME. $WISHES. I have been learning Shell Script."
