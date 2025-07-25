@@ -19,7 +19,7 @@ while getopts ":n:w:h" opt; do
     h) USAGE; exit;;
   esac
 done
-  if [ -z "$NAME" ]; then 
+  if [ -z "$NAME" ]; then
 
     echo "ERROR: -n is mandatory."
     USAGE
